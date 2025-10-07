@@ -18,10 +18,55 @@ while True:
             pass
 
         case 2:
-            pass
+            while True:
+                print("-----CONVERSIÓN DE NÚMEROS-----")
+                print("1. Convertir de Natural a Binario")
+                print("2. Convertir de Binario a Natural")
+                print("3. Volver al menu principal")
+
+                opcion = input("Elegí una opción: ")
+
+                if not opcion.isdigit():
+                    print("Debes ingresar un número válido")
+                    continue
+
+                opcion = int(opcion)
+
+                match opcion:
+
+                    case 1:
+                        while True:
+                            # convertir de natural a binario .
+                            natural = input("Ingrese un número natural mayor o igual a 0: ")
+
+                            if not natural.isdigit():
+                                print("Debes ingresar un número válido")
+                                continue
+                            
+                            natural = int(natural)
+                            if natural < 0:
+                                print("Debes ingresar un número natural (0 o mayor)")
+                                continue
+
+                            
+
+                            
+
+
+
+                    case 2:
+                        pass
+
+                    case 3:
+                        break
+
 
         case 3:
             pass
+
+        case 4:
+            print("Cerrando programa...")
+            break
 
         case _:
            print ("ERROR!")

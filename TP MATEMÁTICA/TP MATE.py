@@ -47,13 +47,7 @@ while True:
                             if natural < 0:
                                 print("Debes ingresar un número natural (0 o mayor)")
                                 continue
-
                             
-
-                            
-
-
-
                     case 2:
                         pass
 

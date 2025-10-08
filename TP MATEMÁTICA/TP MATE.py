@@ -37,6 +37,7 @@ while True:
                     case 1:
                         while True:
                             # convertir de natural a binario .
+                            binario = ""
                             natural = input("Ingrese un número natural mayor o igual a 0: ")
 
                             if not natural.isdigit():
@@ -44,9 +45,23 @@ while True:
                                 continue
                             
                             natural = int(natural)
+                            natural_original = natural  # Guardar el valor original para mostrarlo después
+
                             if natural < 0:
                                 print("Debes ingresar un número natural (0 o mayor)")
                                 continue
+                            
+                            elif natural == 0:
+                                binario = "0"
+                                print(f"El número natural {natural} en binario es: {binario}")
+                                break
+
+                            while natural > 0:
+                                binario = (str(natural % 2)) + binario
+                                natural //= 2
+                            
+                            print(f"El número natural {natural_original} en binario es: {binario}")
+                            break
                             
                     case 2:
                         pass

@@ -1,0 +1,3 @@
+Manzanas,500,50
+Bananas,200,60
+Peras,400,80

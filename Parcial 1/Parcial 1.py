@@ -256,7 +256,7 @@ while True:
                 continue
             
             else:
-                while True
+                while True:
                     print()
                     print("<-----PRESTAMOS Y DEVOLUCIONES----->")
                     print("1. Prestamos")
